@@ -10,7 +10,7 @@
       :mobileBreakpoint="992"
       :desktopHeight="550"
       :mobileHeight="450"
-      :playsinline="false"
+      :playsinline="true"
       :loop="true"
       :autoplay="true"
       :autobuffer="true"

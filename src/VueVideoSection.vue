@@ -1,34 +1,34 @@
 <template>
   <div class="vue-video-section-wrapper" :style="{'height': currentHeight + 'px'}">
-     <div class="vue-video-section">
-       <div class="vue-video-section__overlay-content-wrapper">
-         <div class="vue-video-section__overlay-content-wrapper__background"></div>
-         <div class="vue-video-section__overlay-content-wrapper__content-wrapper">
-           <div class="vue-video-section__overlay-content-wrapper__content-wrapper__content">
-             <slot name="overlay-content"></slot>
-           </div>
-         </div>
-       </div>
+    <div class="vue-video-section">
+      <div class="vue-video-section__overlay-content-wrapper">
+        <div class="vue-video-section__overlay-content-wrapper__background"></div>
+        <div class="vue-video-section__overlay-content-wrapper__content-wrapper">
+          <div class="vue-video-section__overlay-content-wrapper__content-wrapper__content">
+            <slot name="overlay-content"></slot>
+          </div>
+        </div>
+      </div>
 
-       <video
-         :id="elementId"
-         :ref="elementId"
-         class="vue-video-section__video-element"
-         :poster="posterSource"
-         :playsinline="playsinline"
-         :loop="loop"
-         :autoplay="autoplay"
-         :autobuffer="autobuffer"
-         :muted="muted"
-         :controls="controls"
-       >
-         <source v-if="mp4Source" :src="mp4Source" type="video/mp4" />
-         <source v-if="oggSource" :src="oggSource" type="video/ogg" />
-         <source v-if="webmSource" :src="webmSource" type="video/webm" />
-         Sorry, your browser does not support the video tag. Please try upgrading your browser and load the page again.
-       </video>
-    </div>
+      <video
+        :id="elementId"
+        :ref="elementId"
+        class="vue-video-section__video-element"
+        :poster="posterSource"
+        :playsinline="playsinline"
+        :loop="loop"
+        :autoplay="autoplay"
+        :autobuffer="autobuffer"
+        :muted="muted"
+        :controls="controls"
+      >
+      <source v-if="mp4Source" :src="mp4Source" type="video/mp4" />
+      <source v-if="oggSource" :src="oggSource" type="video/ogg" />
+      <source v-if="webmSource" :src="webmSource" type="video/webm" />
+      Sorry, your browser does not support the video tag. Please try upgrading your browser and load the page again.
+    </video>
   </div>
+</div>
 </template>
 
 <script>

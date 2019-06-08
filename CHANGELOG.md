@@ -1,13 +1,9 @@
 # CHANGELOG.md
 
-## 1.3.0 (2019-04-23)
+## 1.0.1 (2019-06-08)
 
-- Added the ability to provide your own collapse open and close image - `collapseButtonImageOpen` and `collapseButtonImageClose`. Added dynamic `id` functionality to the menu options to allow for multiple instances of the component.
+- Fixed issue with video on mobile
 
-## 1.2.0 (2019-03-29)
-
-- Added optional `slot` option named `custom-slot`.
-
-## 1.0.0 (2019-03-18)
+## 1.0.0 (2019-06-07)
 
 - Initial work

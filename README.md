@@ -108,6 +108,10 @@ You'll notice I'm providing three different filetypes in this example - that's b
 </template>
 ```
 
+### Notes
+
+Use the `playsinline` prop to control whether the video plays on mobile. If you set it to false then it will just show its `posterSource` image. Keep in mind that browsers are always changing their reaction to some of these properties so it might be a bit of a mixed bag concerning options like these. Right now, *this* is the way to stop the playing in mobile, but that may change in the future.
+
 ### Props
 
 | prop | type | required | default | possible values | description |

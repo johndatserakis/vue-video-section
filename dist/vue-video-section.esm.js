@@ -1061,7 +1061,7 @@ var __vue_render__ = function() {
                 })
               : _vm._e(),
             _vm._v(
-              "\n       Sorry, your browser does not support the video tag. Please try upgrading your browser and load the page again.\n     "
+              "\n      Sorry, your browser does not support the video tag. Please try upgrading your browser and load the page again.\n    "
             )
           ]
         )
