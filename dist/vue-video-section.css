@@ -1,0 +1,51 @@
+.vue-video-section-wrapper {
+  background: #fff;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.vue-video-section {
+  height: 100%;
+}
+.vue-video-section video[poster] {
+    object-fit: cover;
+}
+.vue-video-section__video-element {
+    z-index: 999;
+    height: 100%;
+    width: 177.77777778vh;
+    /* 100 * 16 / 9 */
+    min-width: 100%;
+    min-height: 56.25vw;
+    /* 100 * 9 / 16 */
+    position: absolute;
+    left: 50%;
+    /* % of surrounding element */
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* % of current element */
+}
+.vue-video-section__overlay-content-wrapper__background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    background: #000;
+    opacity: 0.6;
+}
+.vue-video-section__overlay-content-wrapper__content-wrapper {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+}
+.vue-video-section__overlay-content-wrapper__content-wrapper__content {
+      height: 100%;
+      width: 100%;
+}
+
+/*# sourceMappingURL=VueVideoSection.vue.map */
